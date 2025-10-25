@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - LeaveTrack</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f9fc;
+      color: #333;
+    }
+
+    header {
+      background-color: #0052cc;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #0052cc;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .button {
+      background-color: #0052cc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .values {
+      display: none;
+      margin-top: 15px;
+      padding: 15px;
+      background-color: #e6f0ff;
+      border-left: 5px solid #0052cc;
+    }
+
+    footer {
+      background-color: #e0e0e0;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>About Us - LeaveTrack</h1>
+  <p>Smart Employee Leave Management System</p>
+</header>
+
+<div class="container">
+  <div class="section">
+    <h2>Who We Are</h2>
+    <p>
+      LeaveTrack is developed by a team of HR professionals and software engineers with a shared goal: to simplify the leave tracking process and improve transparency for businesses of all sizes.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>What We Do</h2>
+    <ul>
+      <li>Streamlined leave applications and approvals</li>
+      <li>Real-time leave balance tracking</li>
+      <li>Custom leave types & company policies</li>
+      <li>Integrated reports and analytics</li>
+      <li>Email notifications and reminders</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Why Choose Us</h2>
+    <p>
+      We offer a scalable, secure, and easy-to-use leave management system that fits your unique organizational needs. With 24/7 support and customizable features, LeaveTrack puts HR in control.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Our Mission</h2>
+    <p>
+      To empower businesses by providing a modern, efficient, and automated leave management experience that enhances employee satisfaction and reduces HR workload.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Our Values</h2>
+    <button class="button" onclick="toggleValues()">Show/Hide Values</button>
+    <div class="values" id="values">
+      <ul>
+        <li><strong>Transparency:</strong> Open and clear processes</li>
+        <li><strong>Efficiency:</strong> Save time with automation</li>
+        <li><strong>Adaptability:</strong> Customizable to your business</li>
+        <li><strong>Support:</strong> We’re here when you need us</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 LeaveTrack. All rights reserved.
+</footer>
+
+<script>
+  function toggleValues() {
+    const valuesSection = document.getElementById("values");
+    valuesSection.style.display = valuesSection.style.display === "block" ? "none" : "block";
+  }
+</script>
+
+</body>
+</html>
