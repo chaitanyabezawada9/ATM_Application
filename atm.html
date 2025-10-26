@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ATM Withdrawal</title>
+</head>
+<body>
+  <h2>ATM Withdrawal</h2>
+
+  <script>
+    const accounts = {
+      "123456": 10000,
+      "987654": 5000,
+      "654321": 1500
+    };
+    const accNum = prompt("Enter your account number:");   
+    if (accounts.hasOwnProperty(accNum)) {
+      const amount = parseInt(prompt("Enter amount to withdraw (multiples of ₹500):"));
+      if (amount % 500 === 0) {
+        if (amount <= accounts[accNum]) {
+          accounts[accNum] -= amount;
+          alert(`₹${amount} withdrawn successfully.\nRemaining Balance: ₹${accounts[accNum]}`);
+        } else {
+          alert("Insufficient balance.");
+        }
+      } else {
+        alert("Amount must be in multiples of ₹500.");
+      }
+    } else {
+      alert("Invalid account number.");
+    }
+  </script>
+</body>
+</html>
